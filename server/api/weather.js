@@ -1,4 +1,5 @@
 const axios = require("axios");
+const WEATHER = require("../models/Weather");
 
 require('dotenv').config({path: "./../../../.env"});
 
@@ -15,9 +16,35 @@ class Weather{
      */
 
     getWeatherData = async (city) => {
-        let url = `${baseUrl}?q=${city}&appid=${process.env.WEATHERKEY}`
-        console.log(url);
+        let url = `${baseUrl}?q=${city}&units=metric&appid=${process.env.WEATHERKEY}`
+       
+        
         return (await axios(url)).data;
+    }
+
+
+    //SAVE AND RETRIEVE FROM MONGO
+
+    saveWeatherDataToMongo = async(city, data) =>{
+        const filter = {
+            city : city    
+        }
+
+        const replace = {
+            ...filter,
+            ...data,
+            data : Date.now()
+        }
+
+        await this.findOneReplace(filter,replace);
+    }
+
+    getWeatherDataFromMondo = async(city)=>{
+        return WEATHER.findOne({cityName : city});
+    }
+
+    async findOneReplace(filter, replace) {
+        await WEATHER.findOneAndReplace(filter, replace, {new: true, upsert: true});
     }
 
 }
