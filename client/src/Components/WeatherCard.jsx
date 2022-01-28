@@ -19,8 +19,9 @@ const useStyles = makeStyles(() => ({
         backgroundColor: 'white',
         borderRadius:'10px',
         boxShadow : '1px 2px 10px rgba(0, 0, 0, .2)',
-        width:'200px',
-        margin:'20px'
+        width:'250px',
+        margin:'20px',
+        padding:'10px'
     },
     content: { flex: 1 },
 }));
@@ -36,15 +37,27 @@ function CityDisplay(props){
 
 
 function WeatherDisplay({weatherData}){
+
     if(weatherData.main !== undefined){
+        var iconURL = "https://openweathermap.org/img/wn/" + JSON.stringify(weatherData.weather[0].icon).replace(/['"]+/g, '') + "@2x.png";
         return(
          <>
-        <Typography sx={{ maxWidth: 100 }} align = "left" variant="h3" color="text.secondary" gutterBottom>
-            {Math.trunc(JSON.stringify(weatherData.main['temp']))} 
-        </Typography>
-        <Typography sx={{ maxWidth: 200 }} align = "left" variant="h6" color="text.secondary" gutterBottom>
-            {JSON.stringify(weatherData.weather[0].main).replace(/['"]+/g, '')} 
-        </Typography>
+         <div style={{display:"flex"}}>
+            <div style={{width:"80%"}}>
+                <Typography sx={{ maxWidth: 200 }} align = "left" variant="h3" color="text.secondary">
+                    {Math.trunc(JSON.stringify(weatherData.main['temp']))}°C
+                </Typography>
+                <Typography sx={{ maxWidth: 200 }} align = "left" variant="h5" color="text.secondary" gutterBottom>
+                    {JSON.stringify(weatherData.weather[0].main).replace(/['"]+/g, '')} 
+                </Typography>
+                <Typography sx={{ maxWidth: 200 }} align = "left" variant="body2" color="text.secondary">
+                    Humidity {Math.trunc(JSON.stringify(weatherData.main['humidity']))} %
+                </Typography>
+            </div> 
+            <div style={{float:"right", marginTop:"-15px"}}>
+                <img src={iconURL}></img>
+            </div>
+        </div>
         </>  
         );  
     }
