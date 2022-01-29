@@ -4,14 +4,9 @@ import './Stylesheets/App.css';
 import Weather from "./Scripts/Weather.js"
 import WeatherCard from "./Components/WeatherCard.jsx"
 import Header from "./Components/Header.jsx"
-import Button from '@mui/material/Button';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import Typography from '@mui/material/Typography';
 import Fab from '@mui/material/Fab';
-import Grid from '@mui/material/Grid';
-import AddIcon from "@mui/icons-material/Add"
 
+import AddIcon from '@mui/icons-material/Add';
 
 const LOCAL_STORAGE_KEY = 'cityLocations';
 
@@ -65,10 +60,9 @@ const canAddOrRemove = React.useMemo(() => weatherLocations.every(location => lo
           <Fab
                 onClick={handleAddClick}
                 aria-label="add weather location"
-
                 color="primary"
             >
-             <AddIcon/> 
+              <AddIcon/>
             </Fab>
         </div>
     );

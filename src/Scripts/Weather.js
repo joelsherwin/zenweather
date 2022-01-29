@@ -1,6 +1,6 @@
 const axios = require("axios");
 
-require('dotenv').config();
+require('dotenv').config({path: ".env"});
 
 const baseUrl = "http://api.openweathermap.org/data/2.5/weather";
 
@@ -15,12 +15,11 @@ class Weather{
      */
 
     getWeatherData = async (city) => {
-        let url = `${baseUrl}?q=${city}&units=metric&appid=${process.env.REACT_APP_API_KEY}`
-        console.log(process.env);
+        let url = `${baseUrl}?q=${city}&units=metric&appid=aae34667ca1de378a4de3039b74d210f`
         return (await axios(url)).data;
     }
 
 
 }
 
-module.exports = Weather;
+export default Weather;
