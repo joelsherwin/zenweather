@@ -2,7 +2,7 @@ const axios = require("axios");
 
 require('dotenv').config();
 
-const baseUrl = "http://api.openweathermap.org/data/2.5/weather";
+const baseUrl = "https://api.openweathermap.org/data/2.5/weather";
 
 class Weather{
 
@@ -23,4 +23,4 @@ class Weather{
 
 }
 
-module.exports = Weather;
+export default Weather;
