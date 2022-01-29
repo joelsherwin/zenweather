@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/zenweather/static/css/main.24a0e17e.chunk.css",
+    "main.js": "/zenweather/static/js/main.e2db5fb5.chunk.js",
+    "main.js.map": "/zenweather/static/js/main.e2db5fb5.chunk.js.map",
+    "runtime-main.js": "/zenweather/static/js/runtime-main.426bc9d6.js",
+    "runtime-main.js.map": "/zenweather/static/js/runtime-main.426bc9d6.js.map",
+    "static/js/2.73bc6ea0.chunk.js": "/zenweather/static/js/2.73bc6ea0.chunk.js",
+    "static/js/2.73bc6ea0.chunk.js.map": "/zenweather/static/js/2.73bc6ea0.chunk.js.map",
+    "static/js/3.de8e8b95.chunk.js": "/zenweather/static/js/3.de8e8b95.chunk.js",
+    "static/js/3.de8e8b95.chunk.js.map": "/zenweather/static/js/3.de8e8b95.chunk.js.map",
+    "index.html": "/zenweather/index.html",
+    "static/css/main.24a0e17e.chunk.css.map": "/zenweather/static/css/main.24a0e17e.chunk.css.map",
+    "static/js/2.73bc6ea0.chunk.js.LICENSE.txt": "/zenweather/static/js/2.73bc6ea0.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.426bc9d6.js",
+    "static/js/2.73bc6ea0.chunk.js",
+    "static/css/main.24a0e17e.chunk.css",
+    "static/js/main.e2db5fb5.chunk.js"
+  ]
+}
