@@ -15,7 +15,7 @@ class Weather{
      */
 
     getWeatherData = async (city) => {
-        let url = `${baseUrl}?q=${city}&units=metric&appid=aae34667ca1de378a4de3039b74d210f`
+        let url = '';
         return (await axios(url)).data;
     }
 
