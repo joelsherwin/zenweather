@@ -1,35 +1,24 @@
 import React from "react";
 import Weather from "../Scripts/Weather"
 import { makeStyles } from "@mui/styles";
+import Box from "@mui/material/Box";
+import Chip from "@mui/material/Chip";
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import LocationEntry from "./LocationEntry";
 import CardActions from "@mui/material/CardActions";
 import Button from "@mui/material/Button";
-import CardMedia from '@mui/material/CardMedia';
+import CardMedia from '@mui/material/CardMedia'; 
 import { borderRadius } from "@mui/system";
+import useStyles from "./../Stylesheets/WeatherCard"
 require('dotenv').config({path: "./../../../.env"});
 
-
-const useStyles = makeStyles(() => ({
-    root: {
-        display: "flex",
-        flexDirection: "column",
-        backgroundColor: 'white',
-        borderRadius:'30px',
-        boxShadow : '-6px -6px 20px rgba(255,255,255,1), 6px 6px 20px rgba(0,0,0,0.1)',
-        width:'250px',
-        margin:'20px',
-        padding:'10px'
-    },
-    content: { flex: 1 },
-}));
 
 function CityDisplay(props){
     return(
     <Typography align = "left" variant="h6" color="text.secondary">
-        {props.location}
+        {props.location}, {props.country}
     </Typography>
     );    
 }
@@ -42,6 +31,7 @@ function WeatherDisplay({weatherData}){
         var iconURL = "https://openweathermap.org/img/wn/" + JSON.stringify(weatherData.weather[0].icon).replace(/['"]+/g, '') + "@2x.png";
         return(
          <>
+         <CityDisplay location = {weatherData.name} country={weatherData.sys.country}/> 
          <div style={{display:"flex"}}>
             <div style={{width:"80%"}}>
                 <Typography sx={{ maxWidth: 200 }} align = "left" variant="h3" color="text.secondary">
@@ -89,10 +79,8 @@ function WeatherCard({ location, canDelete, onDelete, onUpdate }){
             <Card className={classes.root} >
             <CardContent className={classes.content} >
                 {!location && <LocationEntry onUpdate={onUpdate} />}
-                <CityDisplay location = {location}/> 
-                {location && <WeatherDisplay weatherData = {weatherData}/>}    
                 
-
+                {location && <WeatherDisplay weatherData = {weatherData}/>}    
             </CardContent> 
             <CardActions>
                 <Button disabled={!canDelete} onClick={onDelete} size="small" color="primary">
