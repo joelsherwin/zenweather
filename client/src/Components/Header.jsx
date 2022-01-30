@@ -16,11 +16,9 @@ class Header extends Component {
     render() {
         return (
             <>
-                <AppBar style={{height:"32px"}}>
-                <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                <Typography style={{textAlign:"center", paddingTop:"2%", fontSize:"20px"}} variant="overline" color="text.secondary" component="div" sx={{ flexGrow: 1 }}>
                     ZenWeather
                 </Typography>
-                </AppBar>
             </>
         );
     }

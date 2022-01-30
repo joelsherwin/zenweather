@@ -10,7 +10,7 @@ export default makeStyles(()=>({
         width:'250px',
         margin:'20px',
         padding:'10px'
-    },
+    },  
     content: { flex: 1 },
 
 }))

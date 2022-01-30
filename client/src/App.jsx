@@ -49,7 +49,7 @@ const canAddOrRemove = React.useMemo(() => weatherLocations.every(location => lo
     return (
         <div className="App">
           <Header></Header>
-          <span style={{height:"30px", display:'block'}}></span>
+          <span style={{height:"10px", display:'block'}}></span>
           <div id="container" style={{display:"flex", flexDirection:"row", flexWrap:"wrap", marginLeft:"8%", marginRight:"0%"}}>
           {weatherLocations.map((location, index) => (
                     <div key={location} item>
