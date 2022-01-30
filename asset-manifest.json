@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/zenweather/static/css/main.61028882.chunk.css",
-    "main.js": "/zenweather/static/js/main.99cb3e6a.chunk.js",
-    "main.js.map": "/zenweather/static/js/main.99cb3e6a.chunk.js.map",
-    "runtime-main.js": "/zenweather/static/js/runtime-main.426bc9d6.js",
-    "runtime-main.js.map": "/zenweather/static/js/runtime-main.426bc9d6.js.map",
-    "static/js/2.b91a0565.chunk.js": "/zenweather/static/js/2.b91a0565.chunk.js",
-    "static/js/2.b91a0565.chunk.js.map": "/zenweather/static/js/2.b91a0565.chunk.js.map",
-    "static/js/3.de8e8b95.chunk.js": "/zenweather/static/js/3.de8e8b95.chunk.js",
-    "static/js/3.de8e8b95.chunk.js.map": "/zenweather/static/js/3.de8e8b95.chunk.js.map",
+    "main.js": "/zenweather/static/js/main.72908d52.chunk.js",
+    "main.js.map": "/zenweather/static/js/main.72908d52.chunk.js.map",
+    "runtime-main.js": "/zenweather/static/js/runtime-main.eca4a837.js",
+    "runtime-main.js.map": "/zenweather/static/js/runtime-main.eca4a837.js.map",
+    "static/js/2.e502b696.chunk.js": "/zenweather/static/js/2.e502b696.chunk.js",
+    "static/js/2.e502b696.chunk.js.map": "/zenweather/static/js/2.e502b696.chunk.js.map",
+    "static/js/3.5aa017ff.chunk.js": "/zenweather/static/js/3.5aa017ff.chunk.js",
+    "static/js/3.5aa017ff.chunk.js.map": "/zenweather/static/js/3.5aa017ff.chunk.js.map",
     "index.html": "/zenweather/index.html",
     "static/css/main.61028882.chunk.css.map": "/zenweather/static/css/main.61028882.chunk.css.map",
-    "static/js/2.b91a0565.chunk.js.LICENSE.txt": "/zenweather/static/js/2.b91a0565.chunk.js.LICENSE.txt"
+    "static/js/2.e502b696.chunk.js.LICENSE.txt": "/zenweather/static/js/2.e502b696.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.426bc9d6.js",
-    "static/js/2.b91a0565.chunk.js",
+    "static/js/runtime-main.eca4a837.js",
+    "static/js/2.e502b696.chunk.js",
     "static/css/main.61028882.chunk.css",
-    "static/js/main.99cb3e6a.chunk.js"
+    "static/js/main.72908d52.chunk.js"
   ]
 }
