@@ -40,6 +40,9 @@ function WeatherDisplay({weatherData}){
                 <Typography sx={{ maxWidth: 200 }} align = "left" variant="h5" color="text.secondary" gutterBottom>
                     {JSON.stringify(weatherData.weather[0].main).replace(/['"]+/g, '')} 
                 </Typography>
+                <Typography sx={{ maxWidth: 200 }} align = "left" variant="body1" color="text.secondary" gutterBottom>
+                Feels Like {Math.trunc(JSON.stringify(weatherData.main['feels_like']))}°C
+                </Typography>
                 <Typography sx={{ maxWidth: 200 }} align = "left" variant="body2" color="text.secondary">
                     Humidity {Math.trunc(JSON.stringify(weatherData.main['humidity']))} %
                 </Typography>

@@ -21,7 +21,7 @@ class CitySearch extends Component {
                         <span>City: </span>
                         <Form.Control name="cityInput"
                                       type="text"
-                                      placeholder="Enter your zip code"
+                                      placeholder="Enter your city name"
                                       onChange={this.onChange}
                                       className="zipCodeInput"/>
                     </Col>

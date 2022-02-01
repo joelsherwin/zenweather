@@ -2,7 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import TextField from "@mui/material/TextField";
 
+
 function LocationEntry({ onUpdate }) {
+
     const handleBlur = ev => onUpdate(ev.target.value);
 
     const handleKeyDown = ev => {
@@ -11,7 +13,15 @@ function LocationEntry({ onUpdate }) {
         }
     };
 
+    function cityCodeExist(val) {
+        return (
+            1
+        );
+    }
+    
     return <TextField autoFocus label="Enter location" onBlur={handleBlur} onKeyDown={handleKeyDown} />;
+
+    
 }
 
 LocationEntry.propTypes = {
