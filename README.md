@@ -1,10 +1,10 @@
 # Zenweather
 
-A ridiculously minimal dashboard of weather data for multiple cities. <br>
+A minimal neumorphic dashboard of weather data for multiple cities. <br>
 Nothing more.<br>
 
 https://joelsherwin.github.io/zenweather/
 
 
-![image](https://user-images.githubusercontent.com/9082609/151516366-c52cb826-1265-46c7-a27e-63ee2918765d.png)
+![image](https://user-images.githubusercontent.com/9082609/152027902-2ece366f-e25a-4267-a206-0394a41f8208.png)
 
