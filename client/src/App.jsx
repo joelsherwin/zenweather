@@ -65,7 +65,6 @@ const canAddOrRemove = React.useMemo(() => weatherLocations.every(location => lo
           <Fab
                 onClick={handleAddClick}
                 aria-label="add weather location"
-
                 color="primary"
             >
              <AddIcon/> 

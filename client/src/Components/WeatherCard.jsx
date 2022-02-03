@@ -86,7 +86,7 @@ function WeatherCard({ location, canDelete, onDelete, onUpdate }){
                 {location && <WeatherDisplay weatherData = {weatherData}/>}    
             </CardContent> 
             <CardActions>
-                <Button disabled={!canDelete} onClick={onDelete} size="small" color="primary">
+                <Button variant="text" disabled={!canDelete} onClick={onDelete} size="small" color="primary">
                     Remove
                 </Button>
             </CardActions>
